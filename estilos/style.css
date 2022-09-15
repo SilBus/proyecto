@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../img/FONDO\ 3\ 11.png);
+  overflow-x: hidden;
+}
+
+/* ESTILOS Y GRID DE CONTENEDOR MADRE */
+.containerMadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  width: 100vw;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* CIERRE DE ESTILOS Y GRID DE CONTENEDOR MADRE */
+
+/* COMIENZO DE ESTILOS Y GRID DE HEADER */
+
+.containerHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo . ."
+    ". barra-de-nav-1 barra-de-nav-1";
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #f7d0c1;
+  margin-bottom: 3em;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.barra-de-nav-1 {
+  grid-area: barra-de-nav-1;
+  list-style-type: none;
+  text-align: right;
+}
+
+.barra-de-nav-1 ul {
+  list-style: none;
+}
+
+.barra-de-nav-1 ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 3px;
+  border-style: outset;
+}
+
+.barra-de-nav-1 ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Monoton', cursive;
+}
+
+.barra-de-nav-1 ul li a:hover {
+  color: #fff8f5;
+  font-weight: bold;
+}
+
+.barra-de-nav-1 ul ul {
+  position: absolute;
+  display: none;
+}
+
+.barra-de-nav-1 ul ul li {
+  display: block;
+}
+
+.barra-de-nav-1 ul li:hover ul {
+  display: block;
+}
+
+.barra-de-nav-1 ul li:hover ul a {
+  color: #faad8e;
+  font-size: 0.8rem;
+}
+
+/* CIERRE DE ESTILOS Y GRID DE HEADER */
+
+/* COMIENZO DE ESTILOS Y GRID DE MAIN INDEX*/
+
+.containerMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img1 img2 img3";
+}
+
+.img1 {
+  grid-area: img1;
+  border-style: double;
+  border: 1px solid pink;
+  margin: 5rem auto;
+}
+
+.img2 {
+  grid-area: img2;
+  border-style: double;
+  border: 1px solid pink;
+  margin: 5rem auto;
+}
+
+.img3 {
+  grid-area: img3;
+  border-style: double;
+  border: 1px solid pink;
+  margin: 5rem auto;
+}
+
+/* CIERRE DE ESTILOS Y GRID DE MAIN INDEX*/
+
+/* COMIENZO DE ESTILOS Y GRID DE MAIN NOSOTROS.HTML */
+
+.containerMainN {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  display: flex;
+  margin-bottom: 3em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imgn p1";
+}
+
+.imgn { 
+  grid-area: imgn; 
+  text-align: center;
+  margin-top: 5em;
+}
+.p1 h2{
+  grid-area: p1;
+  text-align: center;
+  margin-top: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  color: rgb(46, 42, 42);
+
+
+}
+
+.p1 p{ 
+  grid-area: p1;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.8rem;
+  color:rgb(46, 42, 42);
+  
+}
+
+/*COMIENZO DE ESTILOS Y GRID MAIN PRODUCTOS*/
+
+.containerMainPro {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "video1 video2"
+    "video3 video4";
+}
+
+.video1 { 
+  grid-area: video1;
+  text-align: center; 
+  padding: 5px;
+  margin-top:  5em;
+  margin-bottom: 3em;
+}
+
+.video2 { 
+  grid-area: video2; 
+  text-align: center;
+  padding: 5px;
+  margin-top:  5em;
+}
+
+.video3 { 
+  grid-area: video3; 
+  text-align: center;
+  padding: 5px;
+  margin-top:  5em;
+}
+
+.video4 { 
+  grid-area: video4; 
+  text-align: center;
+  padding: 5px;
+  margin-top:  5em;
+}
+
+/* CIERRE DE ESTILOS Y GRID MAIN PRODUCTOS */
+
+/* COMIENZO DE ESTILOS Y GRID DE FRUTAS/VERDURAS Y JUGOS .HTML*/
+
+.containerMainS { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 5em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img11 img22 img33"
+    "img44 img55 img66"
+    "img77 img88 img99";
+}
+
+.img11 { 
+  grid-area: img11;
+  text-align: center;
+  margin: 7px;
+
+}
+
+.img22 { 
+  grid-area: img22;
+  text-align: center;
+  margin: 9px; 
+}
+
+.img33 { 
+  grid-area: img33;
+  text-align: center;
+  margin: 9px; 
+}
+
+.img44 { 
+  grid-area: img44;
+  text-align: center;
+  margin: 9px; 
+}
+
+.img55 { 
+  grid-area: img55;
+  text-align: center;
+  margin: 9px; 
+}
+
+.img66 { 
+  grid-area: img66;
+  text-align: center;
+  margin: 9px;
+}
+
+.img77 { 
+  grid-area: img77;
+  text-align: center;
+  margin: 9px; 
+}
+
+.img88 { 
+  grid-area: img88;
+  text-align: center;
+  margin: 9px;
+}
+
+.img99 { 
+  grid-area: img99;
+  text-align: center;
+  margin: 9px; 
+}
+  
+
+
+/* CIERRE DE ESTILOS Y GRID MAIN FRUTAS.HTML*/
+
+/*COMIENZO DE ESTILOS Y GRID MAIN PUNTOS O.L.*/
+
+.containerMainPo {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "section1 section2";
+}
+
+.section1 { 
+  grid-area: section1;
+  text-align: center; 
+  padding: 5px;
+  border-style: double;
+  margin: 5em;
+}
+.section1 h2{
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 3px;
+  margin: 5px;
+  text-decoration: underline;
+}
+.section1 p{
+  font-size: 1.3rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 3px;
+  margin: 5px;
+}
+
+.section2 { 
+  grid-area: section2; 
+  text-align: center;
+  padding: 5px;
+  border-style: double;
+  margin: 5em;
+}
+.section2 h2{
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 3px;
+  margin: 5px;
+  text-decoration: underline;
+}
+.section2 p{
+  font-size: 1.3rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 3px;
+  margin: 5px;
+}
+/*CIERRE DE ESTILOS Y GRID DE MAIN PUNTOS O.L.*/
+
+/*COMIENZO DE ESTILOS DE CONTACTO-FORMULARIO */
+
+.styleMainCont {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+      "header header header"
+      ". main ."
+      "footer footer footer";
+}
+
+.main {
+  grid-area: main
+}
+
+.styleMainCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+form {
+  background-image: url(../img/transp2.png);
+  padding: 1rem;
+  border: solid;
+  
+
+}
+
+.margin20 {
+  margin: 2rem;
+  color: #faad8e;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  display: block;
+
+}
+
+legend {
+  color: #fdffd9;
+}
+
+.enviar {
+  margin: 10px;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid;
+}
+
+.enviar:hover {
+  color: #faad8e;
+  background-color: black;
+}
+
+
+
+/* COMIENZO DE ESTILOS Y GRID DE FOOTER */
+
+.containerFooter {
+  display: grid;
+  background-color: #f7d0c1;
+  padding: 10px;
+  margin: 1em;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "redes  barra-de-nav-2  ws"
+}
+
+.redes {
+  grid-area: redes;
+  padding: 5px;
+  margin: 15px;
+}
+
+.barra-de-nav-2 {
+  font-size: 1.1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.barra-de-nav-2 ul {
+  list-style: none;
+ text-align: center;
+  
+}
+
+.barra-de-nav-2 ul li {
+  display: block;
+  padding: 5px;
+}
+.barra-de-nav-2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.barra-de-nav-2 ul li a:hover {
+  font-weight: bold;
+}
+.ws {
+  grid-area: ws;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+
+
+/* CIERRE DE ESTILOS Y GRID DE FOOTER */

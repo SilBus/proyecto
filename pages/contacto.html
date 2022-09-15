@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Organic Life</title>
+</head>
+
+<body>
+    <div class="containerMadre">
+        <header>
+            <div class="containerHeader">
+                <div class="logo"><img src="../img/android-chrome-192x192 (1).png" alt="Logotipo de la marca"></div>
+
+                <div class="barra-de-nav-1">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                        <li><a href="../pages/productos.html">PRODUCTOS</a>
+                            <ul>
+                                <li><a href="../pages/frutas.html">FRUTAS</a></li>
+                                <li><a href="../pages/verduras.html">VERDURAS</a></li>
+                                <li><a href="../pages/jugos.html">JUGOS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../pages/puntos-ol.html">PUNTOS O.L.</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="styleMainCont">
+            <form>
+                <fieldset>
+                    <legend>FORMULARIO DE CONTACTO</legend>
+
+                    <div class="margin20">
+                        <label for="name"> Nombre</label>
+                        <input type="text" name="nombre" placeholder="Silvina">
+                    </div>
+
+                    <div class="margin20">
+                        <label for="name"> Apellido</label>
+                        <input type="text" name="apellido" placeholder="Busico">
+                    </div>
+
+                    <div class="margin20">
+                        <label for="genero"> Género</label>
+                        <input type="radio" name="genero" value="Mujer">MUJER
+                        <input type="radio" name="genero" value="Hombre">HOMBRE
+                        <input type="radio" name="genero" value="Otro">OTRO
+                    </div>
+
+                    <div class="margin20">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="margin20">
+                        <label for="barrio">Barrio</label>
+                        <select name="barrio" id="">
+                            <option value="FLORES">FLORES</option>
+                            <option value="VILLA LURO">VILLA LURO</option>
+                            <option value="LINIERS">LINIERS</option>
+                            <option value="MATADEROS">MATADEROS</option>
+                        </select>
+                    </div>
+
+                    <div class="margin20">
+                        <label for="comen">Dejanos tu Consulta</label>
+                        <textarea name="comen" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="margin20">
+                        <label for="terminos"> Términos y Condiciones</label>
+                        <input type="checkbox" name="terminos">
+                    </div>
+
+                    <div class="margin20">
+                        <input type="submit" value="Enviar" id="" class="enviar">
+
+                        <input type="submit" value="Borrar Campos" class="enviar">
+                    </div>
+                </fieldset>
+            </form>
+
+        </main>
+
+        <footer>
+            <div class="containerFooter">
+                <div class="redes"> <a href="https://www.facebook.com" target="_blank"> <img src="../img/face-icon.png" alt="Logo de Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img src="../img/ig-icon.png"
+                            alt="Logo de Instagram"></a>
+                </div>
+                <div class="barra-de-nav-2">
+                    <ul>
+                        <li><a href="../index.html">/Home/</a></li>
+                        <li><a href="../pages/nosotros.html">/Nosotros/</a></li>
+                        <li><a href="../pages/productos.html">/Productos/</a>
+                        <li><a href="../pages/puntos-ol.html">/Puntos o.l./</a></li>
+                        <li><a href="../pages/contacto.html">/Contacto/</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="ws"><img src="../img/ws-icon.png" alt="Logo de Whatsapp">
+                </div>
+
+
+        </footer>
+
+
+
+</body>
+
+</html>
