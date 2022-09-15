@@ -301,10 +301,36 @@ footer {
   text-align: center;
   margin: 9px; 
 }
-  
+.img11:hover{
+  transform: scale(1.2, 1.2);
+}
+.img22:hover{
+  transform: scale(1.2, 1.2);
+}
+.img33:hover{
+  transform: scale(1.2, 1.2);
+}
+.img44:hover{
+  transform: scale(1.2, 1.2);
+}
+.img55:hover{
+  transform: scale(1.2, 1.2);
+}
+.img66:hover{
+  transform: scale(1.2, 1.2);
+}
+.img77:hover{
+  transform: scale(1.2, 1.2);
+}
+.img88:hover{
+  transform: scale(1.2, 1.2);
+}
+.img99:hover{
+  transform: scale(1.2, 1.2);
+}
 
 
-/* CIERRE DE ESTILOS Y GRID MAIN FRUTAS.HTML*/
+/* CIERRE DE ESTILOS Y GRID MAIN FRUTAS/VERDURAS Y JUGOS .HTML*/
 
 /*COMIENZO DE ESTILOS Y GRID MAIN PUNTOS O.L.*/
 
